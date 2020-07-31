@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: #CAD2C5;
+        margin: 12px;
+    }
+</style>
+
+<body>
+    <div class="tiles-grid">
+        <div data-role="tile" data-size="wide" class="bg-red" onclick="goToPage('Canada/canada.html')">
+            <img src="Canada/CanadaFlag.svg" class="icon">
+            <span class="branding-bar">Canada</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #00309a;" onclick="goToPage('Euro/euro.html')">
+            <span class="badge-top">9</span>
+            <img src="euro/flag.png" class="icon">
+            <span class="branding-bar">Europe</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #cd0000;" onclick="goToPage('Ringgit/malay.html')">
+            <span class="badge-top">4</span>
+            <img src="Ringgit/MalaysiaFlag.png" class="icon">
+            <span class="branding-bar">Malaysia</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: firebrick;" onclick="goToPage('Singapore/singapore.html')">
+            <span class="badge-top">3</span>
+            <img src="Singapore/flag.png" class="icon">
+            <span class="branding-bar">Singapore</span>
+        </div>
+        <div data-role="tile" data-size="wide" class="bg-green" onclick="goToPage('South Afrika/sa.html')">
+            <span class="badge-top">3</span>
+            <img src="South Afrika/Flag_of_South_Africa.svg" class="icon">
+            <span class="branding-bar">South Africa</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #292549;" onclick="goToPage('Thailand/thailand.html')">
+            <span class="badge-top">2</span>
+            <img src="Thailand/Flag.png" class="icon">
+            <span class="branding-bar">Thailand</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #004e1d;" onclick="goToPage('UAE/uae.html')">
+            <span class="badge-top">2</span>
+            <img src="UAE/flag.png" class="icon">
+            <span class="branding-bar">United Arab Emirates</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #001c69;" onclick="goToPage('UK/uk.html')">
+            <span class="badge-top">2</span>
+            <img src="UK/british_flag.png" class="icon">
+            <span class="branding-bar">United Kingdom</span>
+        </div>
+        <div data-role="tile" data-size="wide" style="background-color: #002f80;" onclick="goToPage('USA/usa.html')">
+            <span class="badge-top">5</span>
+            <img src="USA/american_flag.jpg" class="icon">
+            <span class="branding-bar">United States of America</span>
+        </div>
+    </div>
+</body>
+<script>
+    function goToPage(pageLink) {
+        window.top.location.href = pageLink;
+    }
+</script>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Coiner</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Krona+One&family=Mulish:wght@300&display=swap');
+
+        /*Image by <a href="https://pixabay.com/users/Ghinzo-10938903/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4896141">Ghinzo</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4896141">Pixabay</a>*/
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Krona One', sans-serif;
+        }
+
+        .verticalCenter {
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /* Mixins */
+        /* bg shortcodes */
+        .bg-gradient1 span,
+        .bg-gradient1:before {
+            background: #52a0fd;
+            background: #7D80DA;         
+        }
+
+
+        /* General */
+        .wrapper {
+            margin: 5% auto;
+            text-align: center;
+            transform-style: perserve-3d;
+            perspecive: 800px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+        }
+
+        /* fancy Button */
+        .fancy-button {
+            display: inline-block;
+            margin: 18px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+        }
+
+        .fancy-button:before {
+            content: '';
+            display: inline-block;
+            height: 30px;
+            position: absolute;
+            bottom: -5px;
+            left: 20px;
+            right: 20px;
+            z-index: -1;
+            border-radius: 30em;
+            filter: blur(20px) brightness(0.95);
+            transform-style: preserve-3d;
+            transition: all 0.3s ease-out;
+        }
+
+        .fancy-button span {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 50em;
+            position: relative;
+            z-index: 2;
+            will-change: transform, filter;
+            transform-style: preserve-3d;
+            transition: all 0.3s ease-out;
+        }
+
+        .fancy-button:focus,
+        .fancy-button:active {
+            color: #fff;
+        }
+
+        .fancy-button:hover {
+            color: #fff;
+        }
+
+        .fancy-button:hover span {
+            filter: brightness(1.05) contrast(1.05);
+            transform: scale(0.95);
+        }
+
+        .fancy-button:hover:before {
+            bottom: 0;
+            filter: blur(10px) brightness(0.95);
+        }
+
+        .fancy-button.pop-onhover:before {
+            opacity: 0;
+            bottom: 10px;
+        }
+
+        .fancy-button.pop-onhover:hover:before {
+            bottom: -7px;
+            opacity: 1;
+            filter: blur(20px);
+        }
+
+        .fancy-button.pop-onhover:hover span {
+            transform: scale(1.04);
+        }
+
+        .fancy-button.pop-onhover:hover:active span {
+            filter: brightness(1) contrast(1);
+            transform: scale(1);
+            transition: all 0.15s ease-out;
+        }
+
+        .fancy-button.pop-onhover:hover:active:before {
+            bottom: 0;
+            filter: blur(10px) brightness(0.95);
+            transition: all 0.2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text verticalCenter">
+        <h1>Welcome to Coiner</h1>
+        <div class="wrapper">
+            <a href="home.html" class="fancy-button bg-gradient1"><span>Let's go!</span></a>
+        </div>
+</body>
+
+</html>
